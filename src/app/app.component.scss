@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Noto+Sans:400,700|Rock+Salt');
+
+
+.wrapper {
+	text-align:center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.header {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+  	grid-row-end: 1;
+  	justify-self: center; 
+  	align-self: center;
+  	position: relative;
+  	width: 100%;
+}
+
+.refresh {
+	position: absolute;
+	top: -30%;
+	left: 62%;
+
+    img {
+        display: block;
+        width: 80px;
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        -moz-filter: invert(100%);
+        -o-filter: invert(100%);
+        -ms-filter: invert(100%);
+    }
+
+    p {
+        font-family:'Gochi Hand', cursive;
+        font-size: 15px;
+        display: block;
+        margin: 0;
+    }
+}
+
+.title {
+	font-family:'Rock Salt', cursive;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+  	grid-row-end: 2;
+  	margin: .4em 0 0 0;
+}
+
+.joke {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 15px;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+  	grid-row-end: 3;
+}
+
+@media only screen and (min-width: 320px) {
+	
+	.header a img {
+		width: 75px;
+	}
+
+	.refresh {
+		top: -15%;
+		left: 64%;
+	}
+
+	.joke {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.header a img {
+		width: 100px;
+	}
+
+	.refresh {
+		top: -20%;
+		left: 59%;
+	
+
+	    img {
+            width: 120px;
+        }
+
+        p {
+            font-size: 26px;
+        }
+    }
+
+	.joke {
+		font-size: 26px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	
+	.refresh {
+		top: -20%;
+		left: 55%;
+	}
+}

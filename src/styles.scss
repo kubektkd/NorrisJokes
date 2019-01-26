@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    height: calc(100% - 4em);
+    width: calc(100% - 1em);
+    margin: auto;
+}
+body {
+    background: brown;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 2em 0em;
+    display: grid;
+    height: calc(100% - 4em);
+}
+
+@media only screen and (min-width: 320px) {
+    
+    html {
+        width: calc(100% - 1em);
+    }
+    body {
+        padding: 2em .5em;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+    html {
+        width: calc(100% - 3em);
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    html {
+        width: calc(100% - 4em);
+    }
+    
+}
