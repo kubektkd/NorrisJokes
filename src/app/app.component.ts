@@ -8,7 +8,7 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'NorrisJokes';
+  title = 'Jokes';
   update: boolean = false;
   joke: any;
 
